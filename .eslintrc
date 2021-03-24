@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "jest": true,
+        "es6": true
+    },
+    "plugins": ["import", "react"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "root": true,
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "jsx": true,
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "modules": true,
+        "experimentalObjectRestSpread": true
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "17.0.2"
+        }
+    },
+    "rules": {
+        "no-console": "warn",
+        "no-eval": "error",
+        "import/first": "error",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
+    }
+}

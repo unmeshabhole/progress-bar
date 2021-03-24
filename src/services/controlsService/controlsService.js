@@ -2,7 +2,6 @@ const getControls = function () {
     return fetch('https://pb-api.herokuapp.com/bars')
         .then((data) => data.json())
         .catch(function () {
-            console.log('error calling Api')
             return {
                 buttons: [26, 25, -43, -8],
                 bars: [77, 43, 40, 55],

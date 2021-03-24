@@ -26,5 +26,5 @@ export default ProgressBars
 
 ProgressBars.propTypes = {
     limit: PropTypes.number,
-    progressPercentagesPerBar: PropTypes.func,
+    progressPercentagesPerBar: PropTypes.arrayOf(PropTypes.number),
 }

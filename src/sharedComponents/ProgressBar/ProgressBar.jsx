@@ -15,6 +15,6 @@ const ProgressBar = (props) => {
 export default ProgressBar
 
 ProgressBar.propTypes = {
-    percentRange: PropTypes.arrayOf(PropTypes.number),
+    percentRange: PropTypes.number,
     limit: PropTypes.number,
 }

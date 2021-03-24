@@ -24,6 +24,6 @@ export const Range = (props) => {
 export default Range
 
 Range.propTypes = {
-    percentRange: PropTypes.arrayOf(PropTypes.number),
+    percentRange: PropTypes.number,
     limit: PropTypes.number,
 }

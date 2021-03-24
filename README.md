@@ -1,6 +1,10 @@
 # Progress bar
 
-Sample progress bar
+Simple reactJS app created using create-react-app
+
+#Live URL
+
+https://unmeshabhole.github.io/progress-bar
 
 ## Available Scripts
 

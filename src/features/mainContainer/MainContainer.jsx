@@ -6,17 +6,8 @@ import getControls from '../../services/controlsService'
 function MainContainer() {
     const [controlsList, setControlsList] = useState([])
 
-    useEffect(() => {
-        let mounted = true
-
-        getControls().then((items) => {
-            console.log('reached to useEffect')
-            console.log(items)
-            if (mounted) {
-                setControlsList(items)
-            }
-        })
-        return () => (mounted = false)
+    useEffect(async () => {
+        setControlsList(await getControls())
     }, [])
 
     return (
